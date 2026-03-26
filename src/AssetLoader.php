@@ -83,15 +83,16 @@ class AssetLoader
     {
     	foreach($assets as $aname => $aversion) {
     		$assetfile = $this->VersionDir . '/' . $aname . '-' . $aversion . '.json';
-    		$this->assets[$aname] = $this->getJSON($assetfile);    	
+    		$this->assets[$aname] = $this->getJSON($assetfile);  
+    		$this->enabled[$aname] = false;
     	}   	
     }
     
     private function enableAssets(array $list): void
     {
     	foreach($list as $aname) {
-    		if(array_key_exists($aname, $this->assets) and !array_key_exists($aname, $this->enabled)) {
-    				$this->enabled[] = $aname; 	
+    		if(array_key_exists($aname, $this->assets)) {
+    				$this->enabled[$aname] = true; 	
     		}
     	}   	
     }
@@ -142,7 +143,7 @@ class AssetLoader
     	$html = "";
     	
     	foreach ($this->assets as $aname => $adata) {
-    		if(!in_array($aname, $this->enabled)) continue;
+    		if(!$this->enabled[$aname]) continue;
     		
     		if(array_key_exists($type, $adata)) {
     			$html .= "<!-- ".htmlspecialchars($aname)." ". $type . " -->\n";
