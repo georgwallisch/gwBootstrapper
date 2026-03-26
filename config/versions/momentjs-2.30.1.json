@@ -1,0 +1,9 @@
+{
+	"info": "momentjs",
+	"path": "/js/momentjs",
+	"version": "2.30.1",
+	"js": {
+		"src": "moment-with-locales.min.js",
+		"integrity": "sha384-Jx7nF8Lr+lkOLpB9WqQqk6OK83W8P87BGQxdNEFvHM5SEiItXH87Ednyl0soQZs8"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"assets": {
+		"bootstrap":"4.6",
+		"jquery":"3.7.1",
+		"momentjs":"2.30.1"
+	},
+	
+	"enabled": ["bootstrap","jquery"]
+}

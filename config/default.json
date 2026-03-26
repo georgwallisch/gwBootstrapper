@@ -1,0 +1,5 @@
+{
+  "resource_server": "https://assets.phpco.de",
+  "stack": "bootstrap5",
+  "error_reporting": 1
+}

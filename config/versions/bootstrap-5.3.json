@@ -1,0 +1,13 @@
+{
+	"info":"bootstrap",
+	"path":"/bootstrap",
+	"version":"5.3.8",
+	"css": {
+		"src":"css/bootstrap.min.css",
+		"integrity": "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+	},
+	"js": {
+		"src":"js/bootstrap.bundle.min.js",    
+		"integrity": "sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+	}
+}
